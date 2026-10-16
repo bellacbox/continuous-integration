@@ -31,6 +31,10 @@ ci-course = "ci_course.cli:main"
 [tool.setuptools.packages.find]
 where = ["src"]
 
+[tool.setuptools.package-data]
+ci_course = ["data/*.csv"]
+
+
 [tool.ruff]
 line-length = 120
 
@@ -50,3 +54,4 @@ testpaths = ["tests"]
 
 [tool.coverage.run]
 source = ["ci_course"]
+
